@@ -37,13 +37,15 @@ public class DataModel {
         this.customers.add(
                 new Customer("3", "henry eight", "213 kings street", 45, "4567834", "henry@court.com"));
         
-        this.cusotmers.add(
+        this.customers.add(
                 new Customer ("4", "mary scott", "415 queens avenue", 30, "2343632", "maryqueen@court.com"));
     
     
     
     }
-
+    public ArrayList<Customer> getCustomer(){
+           return new ArrayList<Customer>(this.customers);
+}
 
     
 }

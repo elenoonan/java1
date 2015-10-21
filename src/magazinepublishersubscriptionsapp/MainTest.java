@@ -1,20 +1,23 @@
 package magazinepublishersubscriptionsapp;
-import java.util.Scanner;
-import java.util.ArrayList;
+//import java.util.Scanner;
+//import java.util.ArrayList;
 import java.util.List;
+
 /**
  *
  * @author N00147653
  */
-public class MagazinePublisherSubscriptionsApp {
+public class MainTest {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+   
+        DataModel mod1 = DataModel.getInstance();
         
-         Scanner in = new Scanner(System.in);
+        List<Customer>customers = mod1.getCustomer();
+        
     }
     
 }
