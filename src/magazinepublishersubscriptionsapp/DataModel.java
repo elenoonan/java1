@@ -1,6 +1,7 @@
 package magazinepublishersubscriptionsapp;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 //the purpose of this DataModel is to build the data structure for the application
@@ -46,6 +47,12 @@ public class DataModel {
     public ArrayList<Customer> getCustomer(){
            return new ArrayList<Customer>(this.customers);
 }
-
+    //get the first element in the ArrayList
+    Customer c1 = customers.get(0);
+    //print object c1 using the toString Method in Customer class
+    System.out.println("First customer is: " + c1.toString());
     
-}
+    //for(int i=0; i<Customer.size(); i++){
+       // System.out.println(Arrays.toString(Customer));
+        }
+    

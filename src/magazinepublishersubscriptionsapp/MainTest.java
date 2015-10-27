@@ -14,10 +14,12 @@ public class MainTest {
      */
     public static void main(String[] args) {
    
-        DataModel mod1 = DataModel.getInstance();
+        Data d1 = Data.getInstance();
         
-        List<Customer>customers = mod1.getCustomer();
+        List<Customer>customers = d1.getCustomers();
         
+        for(int i=0; i<customers.size(); i++){
+            System.out.println(customers.get(i).toString());
+        }
     }
-    
 }
